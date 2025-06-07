@@ -7,7 +7,9 @@ requires-python = ">=3.10"
 dependencies = [
     "bs4>=0.0.2",
     "fastapi[standard]>=0.115.12",
+    "html5lib>=1.1",
     "numpy>=2.2.6",
     "pymilvus>=2.5.10",
     "requests>=2.32.3",
+    "setuptools>=80.9.0",
 ]
