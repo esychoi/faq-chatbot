@@ -13,3 +13,29 @@
 </p>
 
 Chatbot answering FAQs.
+
+## Install dependencies
+
+1. Install uv. \
+`$ curl -LsSf https://astral.sh/uv/install.sh | sh`
+2. Install packages. \
+`$ uv sync`
+
+## Setup Milvus
+
+Run the Milvus docker container: \
+`$ bash standalone_embed.sh start`
+
+You can access the Milvus WebUI at http://127.0.0.1:9091/webui/
+
+Check https://milvus.io/docs/install_standalone-docker.md for more details.
+
+## Launch the API
+
+1. Go to the `chatbot/app/` directory. \
+`cd chatbot/app`
+2. Run the server. \
+`uv run fastapi dev`
+
+The server is running at `http://127.0.0.1:8000`. \
+You can check the API documentation at `http://127.0.0.1:8000/docs`
