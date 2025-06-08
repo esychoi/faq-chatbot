@@ -26,8 +26,7 @@ Chatbot answering FAQs.
 Run the Milvus docker container: \
 `$ bash standalone_embed.sh start`
 
-You can access the Milvus WebUI at http://127.0.0.1:9091/webui/
-
+You can access the Milvus WebUI at http://127.0.0.1:9091/webui/. \
 Check https://milvus.io/docs/install_standalone-docker.md for more details.
 
 ## Launch the API
@@ -39,3 +38,12 @@ Check https://milvus.io/docs/install_standalone-docker.md for more details.
 
 The server is running at `http://127.0.0.1:8000`. \
 You can check the API documentation at `http://127.0.0.1:8000/docs`
+
+## Environment variables
+`.env` example:
+
+```
+MILVUS_URI=http://localhost:19530
+MILVUS_TOKEN=root:Milvus
+MILVUS_DB_NAME="faq"
+```
