@@ -42,7 +42,7 @@ def post_collection(faq_file: UploadFile) -> dict[str, str]:
 
 
 @faq_collections_router.delete("/{faq_collection_name}")
-def get_collection_list(faq_collection_name: str) -> dict[str, str]:
+def delete_collection(faq_collection_name: str) -> dict[str, str]:
     if faq_collection_name not in milvus_manager.get_collection_list():
         raise HTTPException(
             status_code=400,
